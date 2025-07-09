@@ -26,7 +26,7 @@ st.image(IMG_ADDRESS, caption = "EGG to Speech")
 
 def load_model():
     try:
-        model_path = Path(__file__).parent / "best_XGBoost_reg"
+        model_path = Path(__file__).parent / "best_XGBoost_reg.pkl"
         #st.write(f"Checking model path: {model_path}")
         if not model_path.exists():
             st.error(f"Model file does not exist at: {model_path}")
