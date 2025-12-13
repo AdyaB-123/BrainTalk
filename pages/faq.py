@@ -10,4 +10,4 @@ Original file is located at
 import streamlit as st
 
 st.title("Frequently Asked Questions")
-faq_expander = st.expander("General Questions", expander = true)
+faq_expander = st.expander("General Questions", expander = True)
