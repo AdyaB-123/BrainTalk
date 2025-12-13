@@ -9,15 +9,26 @@ from pathlib import Path
 
 from gtts import gTTS
 from io import BytesIO
-
+from faq.py import show_faq_page
 
 import os
 
 IMAGE_ADDRESS = "https://www.tsukuba.ac.jp/en/research-news/images/p20230904180000.jpg"
 
+# Initialize session state for page navigation
+if 'page' not in st.session_state:
+    st.session_state.page = 'Home'
 
+# Sidebar for navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Home", "FAQ & Resources"])
 
 st.image(IMAGE_ADDRESS, caption = "EEG to Speech")
+
+if page == "Home":
+    show_home_page()
+elif page == "FAQ & Resources":
+    show_faq_resources_page()
 
 def load_model():
     try:
