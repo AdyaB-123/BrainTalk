@@ -9,9 +9,7 @@ Original file is located at
 
 import streamlit as st
 
-def main():
+def show_faq_page():
     st.title("Frequently Asked Questions")
     faq_expander = st.expander("General Questions", expander = True)
 
-if __name__ == "__main__":
-    main()
