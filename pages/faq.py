@@ -9,9 +9,5 @@ Original file is located at
 
 import streamlit as st
 
-def main():
-  st.title("Frequently Asked Questions")
-  faq_expander = st.expander("General Questions", expander = true)
-
-if __name__ == "__main__":
-    main()
+st.title("Frequently Asked Questions")
+faq_expander = st.expander("General Questions", expander = true)
