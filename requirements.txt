@@ -1,6 +1,6 @@
 streamlit
 mne
-tsfresh==0.21.0
+tsfresh
 scikit-learn
 joblib==1.4.0
 numpy
@@ -9,3 +9,4 @@ scipy
 xgboost
 gTTS
 setuptools
+requests
